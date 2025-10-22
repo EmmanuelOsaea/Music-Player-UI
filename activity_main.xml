@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#E3F2FD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/cityInput"
+        android:hint="Enter city name"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/checkWeatherButton"
+        android:text="Check Weather"
+        android:backgroundTint="#2196F3"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:text="Weather info will appear here"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
