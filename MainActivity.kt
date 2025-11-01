@@ -62,3 +62,22 @@ private lateinit var miniPlayer: LinearLayout
 private lateinit var songTitleMini: TextView
 private lateinit var artistMini: TextView
 private lateinit var playPauseMini: ImageButton
+
+
+fun updateMiniPlayer(songTitle: String, artist: String) {
+    songTitleMini.text = songTitle
+    artistMini.text = artist
+    playPauseMini.setImageResource(R.drawable.ic_pause)
+}
+
+playPauseMini.setImageResource(R.drawable.ic_play_arrow)
+
+playPauseMini.setOnClickListener {
+    if (mediaPlayer?.isPlaying == true) {
+        mediaPlayer?.pause()
+        playPauseMini.setImageResource(R.drawable.ic_play_arrow)
+    } else {
+        mediaPlayer?.start()
+        playPauseMini.setImageResource(R.drawable.ic_pause)
+    }
+}
