@@ -36,3 +36,19 @@ private val updateSeekBar = object : Runnable {
 
 seekBar.max = mediaPlayer.duration
 updateHandler.post(updateSeekBar)
+
+
+var isShuffle = false
+var isRepeat = false
+
+shuffleButton.setOnClickListener {
+    isShuffle = !isShuffle
+    shuffleButton.text = if (isShuffle) "Shuffle On" else "Shuffle Off"
+}
+
+repeatButton.setOnClickListener {
+    isRepeat = !isRepeat
+    repeatButton.text = if (isRepeat) "Repeat On" else "Repeat Off"
+}
+
+
