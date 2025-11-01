@@ -28,6 +28,73 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#1DB954" />
 </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/miniPlayer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="12dp"
+    android:elevation="6dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/albumArtMini"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_music_note"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/rounded_bg"
+        android:clipToOutline="true" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/songTitleMini"
+            android:text="No song playing"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/artistMini"
+            android:text="Unknown Artist"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:maxLines="1"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnPlayPauseMini"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_play_arrow"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Play or pause" />
+
+</LinearLayout>
+
+
+
+
+
+        
+        
+        
+
+
+
+        
+
+
 <SeekBar
     android:id="@+id/seekBar"
     android:layout_width="match_parent"
