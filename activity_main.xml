@@ -28,3 +28,10 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#1DB954" />
 </LinearLayout>
+<SeekBar
+    android:id="@+id/seekBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:progressTint="#FF9800"
+    android:thumbTint="#FF9800" />
