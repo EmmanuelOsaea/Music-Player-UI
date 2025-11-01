@@ -19,3 +19,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+
+private lateinit var seekBar: SeekBar
+private var updateHandler = Handler(Looper.getMainLooper())
+
+private val updateSeekBar = object : Runnable {
+    override fun run() {
+        mediaPlayer?.let {
+            seekBar.progress = it.currentPosition
+            updateHandler.postDelayed(this, 1000)
+        }
+    }
+}
