@@ -35,3 +35,24 @@
     android:layout_marginTop="8dp"
     android:progressTint="#FF9800"
     android:thumbTint="#FF9800" />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp">
+
+    <Button
+        android:id="@+id/shuffleButton"
+        android:text="Shuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/repeatButton"
+        android:text="Repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
