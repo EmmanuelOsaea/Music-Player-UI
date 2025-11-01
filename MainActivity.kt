@@ -16,8 +16,14 @@ class MainActivity : AppCompatActivity() {
         binding.playButton.setOnClickListener {
             isPlaying = !isPlaying
             binding.playButton.text = if (isPlaying) "Pause" else "Play"
+      miniPlayer = findViewById(R.id.miniPlayer)
+songTitleMini = findViewById(R.id.songTitleMini)
+artistMini = findViewById(R.id.artistMini)
+playPauseMini = findViewById(R.id.btnPlayPauseMini)
+        
         }
     }
+
 }
 
 
@@ -52,3 +58,7 @@ repeatButton.setOnClickListener {
 }
 
 
+private lateinit var miniPlayer: LinearLayout
+private lateinit var songTitleMini: TextView
+private lateinit var artistMini: TextView
+private lateinit var playPauseMini: ImageButton
