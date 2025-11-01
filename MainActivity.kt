@@ -81,3 +81,10 @@ playPauseMini.setOnClickListener {
         playPauseMini.setImageResource(R.drawable.ic_pause)
     }
 }
+
+miniPlayer.setOnClickListener {
+    val intent = Intent(this, NowPlayingActivity::class.java)
+    intent.putExtra("songTitle", songTitleMini.text.toString())
+    intent.putExtra("artist", artistMini.text.toString())
+    startActivity(intent)
+}
