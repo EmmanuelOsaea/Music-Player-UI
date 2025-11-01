@@ -32,3 +32,7 @@ private val updateSeekBar = object : Runnable {
         }
     }
 }
+
+
+seekBar.max = mediaPlayer.duration
+updateHandler.post(updateSeekBar)
